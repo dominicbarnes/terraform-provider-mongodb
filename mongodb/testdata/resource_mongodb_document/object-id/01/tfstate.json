@@ -1,0 +1,13 @@
+{
+    "mongodb_document.main": {
+        "attributes_set": [
+            "id"
+        ],
+        "attributes": {
+            "database": "test",
+            "collection": "resource.mongodb.document",
+            "document_id": "",
+            "json": "{}"
+        }
+    }
+}

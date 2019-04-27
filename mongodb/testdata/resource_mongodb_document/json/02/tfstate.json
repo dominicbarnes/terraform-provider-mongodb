@@ -1,0 +1,13 @@
+{
+    "mongodb_document.main": {
+        "attributes_set": [
+            "id"
+        ],
+        "attributes": {
+            "database": "test",
+            "collection": "resource.mongodb.document",
+            "document_id": "main",
+            "json": "{\"boolean\":false,\"float\":6.28,\"integer\":1,\"string\":\"hello world!\"}"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+version: '3'
+services:
+
+  mongo:
+    image: mongo:4
+    ports:
+      - 27017:27017
+
+  mongoexpress:
+    image: mongo-express:latest
+    links:
+      - mongo
+    ports:
+      - 8081:8081

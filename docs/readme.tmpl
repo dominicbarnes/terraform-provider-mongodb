@@ -1,0 +1,30 @@
+# terraform-provider-mongodb
+
+> A [Terraform][terraform] provider for [MongoDB][mongodb]. The primary use-case
+> for this particular provider is "seeding" a database for test/stage/dev
+> environments.
+
+## provider "mongodb"
+
+| Attribute | Type | Description |
+| --- | --- | --- |
+{{- range $name, $attr := .Provider.Attributes }}
+  {{- if not $attr.Computed }}
+| {{ $name }} | {{ $attr.Type.FriendlyName }} | {{ $attr.Description }} |
+  {{- end }}
+{{- end }}
+
+{{ range $name, $resource := .ResourceTypes }}
+### resource "{{ $name }}"
+
+| Attribute | Type | Description |
+| --- | --- | --- |
+{{- range $name, $attr := $resource.Attributes }}
+  {{- if not $attr.Computed }}
+| {{ $name }} | {{ $attr.Type.FriendlyName }} | {{ $attr.Description }} |
+  {{- end }}
+{{- end }}
+{{ end }}
+
+[terraform]: https://www.terraform.io/
+[mongodb]: https://www.mongodb.com/
